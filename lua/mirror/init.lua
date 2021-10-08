@@ -29,6 +29,10 @@ local function set_colors(scheme)
 end
 
 function M.setup()
+    if vim.fn.has('termguicolors') ~= 1 then
+        error("Enable 'termguicolors' option to use with terminal")
+        return
+    end
     if vim.fn.exists('syntax_on') then
         vim.cmd('syntax reset')
     end
