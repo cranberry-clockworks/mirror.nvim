@@ -30,7 +30,7 @@ end
 
 function M.setup()
     if vim.fn.has('termguicolors') ~= 1 then
-        error("Enable 'termguicolors' option to use with terminal")
+        error('Enable termguicolors to use with terminal')
         return
     end
     if vim.fn.exists('syntax_on') then
@@ -124,7 +124,7 @@ function M.setup()
         Operator = { guifg = green_light, gui = 'none' },
         PreProc = { guifg = orange },
         Repeat = { guifg = blue },
-        Special = { guifg = light_medium },
+        Special = { guifg = orange },
         SpecialChar = { guifg = green_light},
         Statement = { guifg = blue },
         StorageClass = { guifg = purple },
@@ -178,6 +178,7 @@ function M.setup()
         LspReferenceText = { gui = 'underline', guisp = light_soft },
         LspReferenceRead = { gui = 'underline', guisp = light_soft },
         LspReferenceWrite = { gui = 'underline', guisp = light_soft },
+        LspSignatureActiveParameter = { guifg = orange }, 
         LspDiagnosticsDefaultError = { guifg = red, gui = 'none' },
         LspDiagnosticsDefaultWarning = { guifg = yellow, gui = 'none' },
         LspDiagnosticsDefaultInformation = { guifg = light_medium, gui = 'none' },
