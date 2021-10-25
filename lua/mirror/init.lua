@@ -138,7 +138,7 @@ function M.setup()
         -- Diff highlighting
         DiffAdd = { guibg = green_dark },
         DiffChange = { guibg = dark_hard },
-        DiffDelete = { guibg = red_dark },
+        DiffDelete = { guifg = dark_medium, guibg = red_dark },
         DiffText = { guifg = yellow, guibg = dark_hard },
         DiffAdded = { guifg = green },
         DiffFile = { guifg = red },
@@ -148,7 +148,7 @@ function M.setup()
 
         -- Git highlighting
         gitcommitOverflow = { guifg = yellow },
-        gitcommitSummary = { guifg = green },
+        gitcommitSummary = { guifg = light_soft },
         gitcommitComment = { guifg = dark_soft },
         gitcommitUntracked = { guifg = dark_soft },
         gitcommitDiscarded = { guifg = dark_soft },
